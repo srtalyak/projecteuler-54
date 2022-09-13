@@ -254,6 +254,7 @@ player2 = 0
 tie = 0
 file = open("p054_poker.txt", "r")
 pokerHands = file.read()
+file.close()
 pokerHands = pokerHands.split("\n")
 for i in pokerHands:
     winner = whoWins(i)
